@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 setInterval(() => {
-  axios.get('https://твой-проект.glitch.me/')
+  axios.get('https://csmarket.glitch.me')
     .then(res => {
       console.log(`Прокинул запрос в ${new Date().toLocaleTimeString()}`);
     })
