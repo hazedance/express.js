@@ -1,0 +1,11 @@
+const axios = require('axios');
+
+setInterval(() => {
+  axios.get('https://твой-проект.glitch.me/')
+    .then(res => {
+      console.log(`Прокинул запрос в ${new Date().toLocaleTimeString()}`);
+    })
+    .catch(err => {
+      console.error('Ошибка пинга:', err.message);
+    });
+}, 280000); // 280 секунд = 4 минуты 40 секунд
